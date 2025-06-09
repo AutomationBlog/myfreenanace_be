@@ -9,11 +9,6 @@ const transactionSchema = new mongoose.Schema({
     ref: "Account",
     required: true,
   },
-  status: {
-    type: String,
-    enum: ["pending", "completed", "failed"],
-    default: "pending",
-  },
   createdAt: { type: Date, default: Date.now },
 });
 
