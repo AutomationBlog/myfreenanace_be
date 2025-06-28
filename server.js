@@ -21,7 +21,9 @@ app.use(express.json());
 
 // Basic route
 app.get("/", (req, res) => {
-  res.send("Hello, World!");
+  res.send(
+    "<h1 class='text-3xl font-bold'>Freenance App Backend API is running successfully!</h1>"
+  );
 });
 
 const PORT = process.env.PORT || 5000;
